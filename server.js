@@ -50,6 +50,7 @@ app.use("/api/widgets", widgetsRoutes(db));
 
 app.get("/", (req, res) => {
   res.render("index");
+  console.log("feature routes");
 });
 
 app.listen(PORT, () => {
